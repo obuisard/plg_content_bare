@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="3.1" group="content" method="upgrade">
+	<name>plg_content_bare</name>
+	<version>1.0.0</version>
+	<creationDate>05/15/2016</creationDate>
+	<copyright>Copyright (C) 2011 Simplify Your Web. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<author>Olivier Buisard</author>
+	<authorEmail>olivier.buisard@simplifyyourweb.com</authorEmail>
+	<authorUrl>www.simplifyyourweb.com</authorUrl>
+	<scriptfile>installer.php</scriptfile>
+	<description>PLG_CONTENT_BARE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="bare">bare.php</filename>
+		<filename>index.html</filename>
+		<filename>license.txt</filename>
+	</files>
+	<languages>
+	   <language tag="en-GB">language/en-GB/en-GB.plg_content_bare.ini</language>
+	   <language tag="en-GB">language/en-GB/en-GB.plg_content_bare.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="additional_label" type="text" default="test" label="PLG_CONTENT_BARE_ADDITIONALLABEL_LABEL" description="PLG_CONTENT_BARE_ADDITIONALLABEL_DESC" />
+		   </fieldset>
+   		</fields>
+   </config>
+   <updateservers>
+		<server type="extension" priority="1" name="Bare Content Plugin auto updater">http://www.barejoomlatemplates.com/autoupdates/bare/barecontentplugin-update.xml</server>
+	</updateservers>
+</extension>
